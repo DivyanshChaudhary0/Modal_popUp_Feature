@@ -12,6 +12,7 @@ html, body {
 
 body {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.393);
 }
 body .images {
   width: 100%;
