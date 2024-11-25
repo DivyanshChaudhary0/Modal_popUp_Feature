@@ -5,9 +5,11 @@ const modalImage = document.querySelector(".modal img");
 const body = document.querySelector("body");
 
 images.addEventListener("click",function(e){
-    modal.style.display = "flex";
-    modalImage.setAttribute("src",`${e.target.src}`);
-    console.log(e.target.src);
+    if(e.target.tagName === "IMG"){
+        modal.style.display = "flex";
+        modalImage.setAttribute("src",`${e.target.src}`);
+    }
+    // console.log(e.target.tagName);
 })
 
 window.addEventListener("click",function(e){
